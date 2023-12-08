@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<br>
+    <table border="1">
+        <thead><!--agrupa los elementos de la cabecera en la tabla-->
+            <tr>
+                <th colspan="3">Encabezado de tabls </th> <!--Permite expandr las celdas de datos o de encabezados al numero de columnas que deseamos ocupar-->
+            </tr>
+        </thead>
+        <tbody>
+            <tr> <!--Agrupas los elementos de contenido en la tabla-->
+                <td>El cuerpo de la tabla</td>
+                <td>con dos columnas</td>
+                <td>columna 3</td>
+            </tr>
+            <tr>
+                <th>oootra columna</th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3">Piesitos</th>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <h1 id="Anclajes">Anclajes: interno y externo</h1>
+    <a href="#seccion1">¿Adoptar una mascota? </a>
+    <br>
+    <a href="#seccion2">Antes de llevar a un peludito a casa</a>
+<br>
+    <a href="#seccion3">Cuánto cuesta</a>
+    <br>
+    <a href="#seccion4">Dueño responsable</a>
+    <br>
+    <h2 id="seccion1">¿Adoptar una mascota? Tome en cuenta sus gastos
+    </h2>
+    <img src="https://www.eleconomista.com.mx/__export/1650592718322/sites/eleconomista/img/2022/04/21/grafico_eleconomista_mexico_finanzas_personales_adopcion_de_mascotas_consejos.png_1947833983.png" alt="referenocia"
+    width="400px">
+    <h4 id="seccion2"> Antes de llevar a un peludito a casa, debe tener en mente que es una responsabilidad monetaria a largo plazo y que ellos se merecen que les demos una vida digna.
+    </h4>
+    <P>
+        Las organizaciones protectoras de animales siempre recomiendan tomar en cuenta que el adoptar una mascota representa una responsabilidad por muchos años, pero lo que también debemos tomar en cuenta antes de adoptar es el hecho de que esta responsabilidad también representa un gasto.
+    </P>
+    <br>
+    <br>
+    <h3 id="seccion3">¿Cuánto cuesta mantener una mascota?
+    </h3>
+    <p>El gasto de una mascota dependerá de muchos factores, principalmente la talla del animalito, ya que un perro de talla pequeña no come ni tiene las mismas necesidades que uno de talla grande, por ello antes de adoptar debemos determinar a qué tipo de mascota podemos darle una vida digna.
+    </p>
+    <h3 id="seccion4">Dueño responsable</h3>
+    <p>El gobierno realiza campañas de vacunación y esterilización gratuitas, incluso la Facultad de Medicina Veterinaria y Zootecnia de la UNAM puso a disposición servicios de esterilización con costos de recuperación desde 650 a 1,200 pesos.
+    </p>
+
+    <a href="index.html">Regresar al inicio</a>
+    <br>
+    <a href="#Anclajes">Articulo</a>
+    <br>
+    <br>
+    <br>
+    
+    <h2>Anclaje externo</h2>
+    <br>
+    <h5>Referenciar un articulo dentro de otro</h5>
+    <a href="https://www.telediario.mx/comunidad/refugios-de-animales-en-guadalajara-para-adopcion" target="_blank"> Refugios en Guadalajara</a>
+    <!--Estos anclajes enlazan a una página web diferente. El valor del atributo href es la URL completa del sitio web de destino y el identificador de la sección.-->
+    <br>
+    <h5>Anclar numero telefonico </h5>
+    <br>
+    <a href="tel:+523317453874"> Llamar a Fulanito</a>
+    <br>
+    <h5>Anclaje de Whatsapp</h5>
+    <a href="https://wa.me/3317453874" target="_blank">Envianos un mensaje</a>
+    <br>
+    <h5>Anclaje cuadro de maps</h5>
+    <!-- Código de inserción del mapa -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34089.166399023256!2d-98.98326696211396!3d18.893937836875185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce6da5b0d0a117%3A0x4b1a6bf668a629e2!2sBalneario%20Ejidal%20El%20Bosque!5e0!3m2!1ses!2smx!4v1701711601332!5m2!1ses!2smx"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br>
+    <hr>
+    <br>
+    <h1>Formularios y tipos de entrada</h1>
+    <form action="/Procesar_formulario" method="post"></form>
+    <!--La etiqueta form se utiliza para crear un formulario en HTML que permmite a los usuarios procesar informacion
+    action: especifica a la URL a la que se enviaran los datos del formulario cuando este se envia
+method: define el metodo http que se utilizara para enviar los datoss (puede ser get o post)-->
+<br>
+<h4>Etiqueta input </h4> <!--se utiliza para crear campos de entrada en un formulario-->
+        <input type="text" name="usuario" placeholder="name">
+        <input type="password" name="contraseña" placeholder="contraseña">
+        <!-- type: Define el tipo de entrada (texto, contraseña, correo electrónico, etc.).
+name: Es el nombre del campo, utilizado para identificar el dato cuando se envía el formulario.
+placeholder: Proporciona un texto de ejemplo dentro del campo de entrada. -->
+<br>
+<br>
+<h4>Etiqueta label</h4>
+<!--Label se utiliza para etiquetar un elemento de entrada en un formulario, lo que mejora la accesibilidad y experiencia de usuario-->
+<label for="usuario"> Nombre: <!--For es un atributo se asocia con el id de un elemento de entradapara indicar a que campo se refiere-->
+    <input type="text" id="usuario" name="usuario">
+</label>
+<br>
+    <h4>Etiqueta button </h4>
+    <!--Se utiliza para crear botones en un formulario que los users pueden usar para hacer click y enviar informacion-->
+    <button type="submit">Enviar </button>
+    <button type="reset">resetear </button>
+        <!--Type define el tipo de boton-->
+<br>
+    <h4> Area de texto </h4>
+    <br>
+    <textarea name="comentarios" id="comentarios" cols="50" rows="10" placeholder="ponga sus comentarios">
+    </textarea>
+<br>
+    <h4>Numero (number) </h4>
+    <input type="number" name="number" placeholder="Elija un numero ">
+    <br>
+    <h4>Correo electronico </h4>
+    <input type="email" name="correo" placeholder="Ingrese su correo e">
+    <br>
+    <h4>Numero telefonico (tel)</h4>
+    <br>
+    <input type="tel" name="telefono" placeholder="ingrese su numero">
+    <br>
+    <h4>Fecha (date) </h4>
+    <input type="date" name="fecha">
+    <br>
+    <h4>Hora (time)</h4>
+    <input type="time" name="Hora">
+    <br>
+    <h4>Archivo (file)</h4>
+    <input type="file" name="Archivo">
+
+</body>
+</html>

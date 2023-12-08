@@ -1,0 +1,15 @@
+p {
+    background-color: blue;
+}
+.CH {
+    background-color: blanchedalmond;
+}
+#Baruch {
+    color: brown; background-color: black;
+}
+#Daniel{
+    background-color: blueviolet; color: aquamarine;
+}
+div{
+    border: solid blueviolet;
+}

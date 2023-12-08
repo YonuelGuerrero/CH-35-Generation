@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion a css</title>
+
+    <link rel="stylesheet" href="./ASSETS/Style/style.css"
+
+</head>
+<body>
+    <!--Hay tres formas de agregar estilos a un documento html
+1. InLine (en linea): para trabajar con los estilos inline utilizamos la palabra reservada style y con esto ya le damos la instruccion de lo que queremos añadir.
+Tiene mayor jerarquia sobre la etiqueta style-->
+    <h1>InLine</h1>
+    <p style="color: blueviolet; background-color: rgb(92, 225, 225); font-size: x-large;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque distinctio, sit ea recusandae officia voluptatum ipsam voluptates in commodi nulla omnis doloremque ad unde explicabo. Eos officiis ipsum enim error!</p>
+<!--2.Etiqueta Style
+Cuando usamos los estilos dentro de la etiqueta style, separamos los estilos de la etiqueta para mantener un codigo limpio y claro -->
+<style>
+    body{background-image:url(https://i.pinimg.com/564x/d8/bb/4f/d8bb4ffd742471a4f3d7a61cabaac475.jpg);
+    }
+</style>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores aliquid, a ullam similique voluptates esse labore repellat cumque rem alias animi odit quos reprehenderit asperiores dolorem pariatur accusantium, quisquam quis!</p>
+
+<!--3. Referencia a un documento de estilos externo (buena practica)
+Codigo mas limpio, mas entendible, velocidad de lectura en la pag, escalabilidad.
+Tendremos documentos separados, uno para html, y otro css para darle estilos
+-->
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, totam quos distinctio deserunt temporibus quod doloribus fugit consequuntur a sequi consectetur eos perferendis dolorum deleniti praesentium minima ipsa qui ducimus.</p>
+
+<!--Clases y ID
+Para ser mas especificos en los estilos de referencia en css se utiliza class (.) y id(#). El . y # van en css para referirse a clase y id respectivamente
+-->
+
+<div>
+    <h2 class="CH" id="Yonuel"> Yonuel</h2>
+    <h2 class="CH" id="Baruch"> Baruch</h2>
+</div>
+
+<h2 class="CH" id="Eveida"> Eveida</h2>
+<h2 class="CH" id="Daniel"> Daniel</h2>
+
+<!--
+    El modelo de caja nos permite establecernuestro el diseño de nuestra pag web , ya que hace que nuestros elementos se presenten en formas rectangulares y de esta forma podemos modificar el aspecto 
+-->
+
+<!--a o ancla permite agregar enlaces-->
+</body>
+</html>

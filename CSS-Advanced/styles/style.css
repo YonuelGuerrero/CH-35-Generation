@@ -1,0 +1,217 @@
+:root {
+    /* -- nombre de variable -- */
+    --font-primary:'Bebas Neue', sans-serif;
+    --color-primary: #D95032;
+    --color-secondary: #D94E4E;
+    --color-text-primary: #000000;
+    --color-text-secondary: #7897BF;
+    --color-light: #99BFF2;
+    --color-dark: #0F1B26; 
+    --color-backgroud: #BFAC4B;
+}
+body{
+    background-color: var(--color-backgroud);
+    color: var(--color-text-primary);
+    font-family: var(--font-primary);
+}
+
+.position{
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-light);
+}
+/* La posicion estatica es la posicion por default de html, no se afecta por top, bottom, left ni right */
+#static{
+    background-color: var(--color-primary);
+    position: static;
+    top: 28px;
+    bottom: 28px;
+    left: 20px;
+    right: 20px;
+}
+/* Posicionado de forma relativa al elemento anterior y si permite movimiento mediante propiedades top, bottom, left y right */
+#relative{
+    background-color: var(--color-secondary);
+    position: relative;
+    top: 800px;
+    left: 200px;
+}
+/* se posiciona de forma relativa a su ancestro mas cercano y no con respecto al viewport */
+#absolute{
+    position: absolute;
+    background-color: var(--color-dark);
+} 
+/* fixed permite mantener el elemento de manera fija en el viewport */
+#fixed {
+    left: 350px;
+    top: 500px;
+    bottom: 100px;
+    position: fixed;
+    background-color: gold;
+}
+#chat {
+    /*border: solid var(--color-light) 1px;*/
+    position: fixed;
+    top: 400px;
+    left: 650px;
+    width: 60px;
+    height: 60px;
+}
+#whatsapp-icon {
+    width: 100%;
+}
+.display-inline{
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-secondary);
+    color: var(--color-dark);
+    text-align: center;
+    margin: 2px;
+}
+#display1, #display2{
+    display: inline;
+
+}
+.display-block{
+    /*display: block;*/
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-text-secondary);
+    text-align: center;
+    margin: 2px;
+}
+@media (max-width:720px){
+    .display-none{
+        display: none;
+    }
+}
+
+/* Display flex me permite trabajar de manera flexible con elementos anidados dentro de un ancestro. El flexbox se aplica en el container y tiene efecto sobre los hijos.
+Por default, la direccion flex es en filas (row). Vamos a poder acceder a diversas propiedades para modificar el comportamiento de los elementos.
+   >- flex-direction: column, column-reverse, row, row-reverse.
+   >-flex-wrap: wrap: nowrap, wrap-reverse
+   >-justify-content:center, flex-start, flex-end, space between, space around
+   >-align-item: start, end, center
+   >-align-self: center, flex-end, flex-start
+*/
+
+.container {
+    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    width: auto;
+    height: 300px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--color-light);
+}
+.display-flex{
+    width: 100px;
+    height: 80px;
+    margin: 5px;
+    padding: 2px;
+    text-align: center;
+    border-radius: 6px;
+    background-color: var(--color-primary);
+}
+#item-6{
+    align-self:flex-end
+}
+.display-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration:none;
+    color: var(--color-light);
+}
+
+/*Grid layout 
+-Elementos de una cuadricula grid: contenedor, items, celdas, area.
+Display: grid;
+*/
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    /*grid-template-rows: auto; */
+    gap: 20px;
+
+    padding: 10px;
+}
+
+.display-grid{
+    background-color: var(--color-secondary);
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    border: solid var(--color-light) 1px;
+}
+.container-1{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-areas: 
+        "header header header"
+        "aside section section"
+        "aside article article"
+        "footer footer footer"
+    ;
+
+    width: auto;
+    height: 500px;
+    border: solid var(--color-primary) 0.7px;
+    text-align: center;
+    margin: 10px;
+    font-size: 18px;
+}
+header{
+    background-color: aqua;
+    grid-area: header;
+}
+
+aside{
+    background-color: blueviolet;
+    grid-area: aside;
+}
+section{
+    background-color: coral;
+    grid-area: section;
+}
+article{
+    background-color: brown;
+    grid-area: article;
+}
+footer{
+    background-color: chartreuse;
+    grid-area: footer;
+}
+@media (max-width: 720px) {
+    .container-1{
+        display: grid; 
+        /*grid-template-columns: repeat(1fr);*/
+        grid-template-columns: 1fr;
+        /*grid-template-rows: 1fr 2fr 2fr 1fr;*/
+        grid-template-rows: repeat(5, 2fr);
+        grid-template-areas: 
+            "header"
+            "aside"
+            "section"
+            "article"
+            "footer"
+        ;
+    
+        width: auto;
+        height: 500px;
+        border: solid var(--color-primary) 0.7px;
+        text-align: center;
+        margin: 10px;
+        font-size: 18px;
+    }
+}
