@@ -1,0 +1,141 @@
+:root{
+    --font: 'Montserrat';
+    --fonttitle: 'Montserrat Alternates';
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font);
+    height: 100%;
+}
+.cont{
+    height: 100%;
+    width: 100%;
+    border: black 1px solid;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+.Cont-left{
+    height: 100%;
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.elements{
+    width: 55%;
+    height: 70%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2fr,1fr);
+    grid-template-rows: repeat(7fr,1fr);
+    padding: 30px 15px;
+    border: #D1D2FA 1px solid;
+    box-shadow: 0px 0px 20px black;
+    font: var(--font);
+}
+.google img, .apple img{
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.create, .divisor, .email, .password, .button, .account {
+    margin: 5px;
+}
+.create, .divisor, .email, .password, .button, .account{
+    grid-column: span 2;
+}
+.google, .apple{
+    grid-column: span 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid  #1D1D1D 1px;
+    font-size: 30px;
+    border-radius: 12px;
+    font: var(--fonttitle);
+    width: 90%;
+    height: 90%;
+    justify-content: space-around;
+}
+.divisor {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    justify-content: space-around;
+    font: var(--fonttitle);
+}
+.line1, .line2 {
+    width: 40%;
+    height: 1px;
+    display: flex;
+    background-color: #6667B0;
+    position: relative;
+    margin-top: 2%;
+
+}
+.email, .password{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 17px;
+    font: var(--fonttitle);
+}
+::placeholder{
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    color: #6667B0;
+    padding: 20px;
+    font: var(--fonttitle);
+    border-radius: 10px;
+}
+.button{
+    padding: 10px;
+    height: 40px;
+}
+button{
+    background-color: #6B43FF;
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+    color: #F4F1FF;
+    font: var(--fonttitle);
+    box-align: center;
+    font-size: 18px;
+}
+.account{
+    display: flex;
+    justify-content: right;
+    color: #6B43FF;
+}
+.create {
+    font:  var(--fonttitle);
+    font-size: 21px;
+}
+
+.Cont-right{
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(to right,#B492FD 30%, #AD4EF5 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Cont-right img{
+    height: 100%;
+    width: 100%;
+}
