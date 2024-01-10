@@ -1,0 +1,12 @@
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 50px;
+}
+
+.card:hover{
+    box-shadow:#ff7cfb 10px 10px 30px;
+    background: #ff7cfb;
+}

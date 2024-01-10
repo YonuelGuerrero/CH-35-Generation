@@ -1,0 +1,13 @@
+{
+  "name": "npm-parimpar-yonuelguerrero",
+  "version": "1.0.0",
+  "description": "permite determinar si el numero es par o impar ",
+  "main": "index.js",
+  "type": "module",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yonuel Guerrero",
+  "license": "ISC"
+}
