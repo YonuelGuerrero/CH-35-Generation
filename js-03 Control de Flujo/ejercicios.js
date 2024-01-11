@@ -70,7 +70,7 @@ if (numeroal % 4 === 0) {
  * 
  * Consideraciones: utilizar la estructura switch
  */
-let categoria = "terror";
+let categoria = "accion";
 switch (categoria) {
     case "accion":
         console.log("Echate la de duro de matar");
@@ -96,6 +96,7 @@ switch (categoria) {
 }
 
 
+
 /** Ejercicio 5
  * 
  * Crear una interfaz de un cajero ATM
@@ -110,7 +111,7 @@ switch (categoria) {
  * Segun sea la opcion indicada, imprimir en pantalla la accion a realizar
  * Utilizar if/else
  */
-let opcion = 2;
+let opcion = 1;
 
 if (opcion === 1) {
     console.log("Usted va a disponer de efectivo"); 
@@ -172,4 +173,4 @@ function convertirDivisa(cantidad, opcion) {
             break;
     }
 }
-convertirDivisa (200,2)
+convertirDivisa (200,1)
